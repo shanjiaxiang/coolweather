@@ -83,8 +83,8 @@ public class ChooseAreaFragment extends Fragment {
                     queryCounties();
                 }else if (currentLevel == LEVEL_COUNTY){
                     //省市区服务接口访问不到，设置默认weatherId
-                    //String weatherId = countyList.get(position).getWeatherId();
-                    String weatherId = "CN101010100";
+                    String weatherId = countyList.get(position).getWeatherId();
+                    //String weatherId = "CN101010100";
                     if(getActivity() instanceof MainActivity){
 
                         Toast.makeText(getActivity(),weatherId,Toast.LENGTH_SHORT).show();
